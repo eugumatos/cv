@@ -69,8 +69,8 @@ export function Modal({
               </p>
 
               <div className="flex justify-end gap-3">
-                {techs.map(tech => (
-                  <Icon name={tech} size={40} />
+                {techs.map((tech, key) => (
+                  <Icon key={key} name={tech} size={40} />
                 ))}
               </div>
             </div>

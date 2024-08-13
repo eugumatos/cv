@@ -87,7 +87,9 @@ export default function Home() {
       <StickySection>
         <section className="max-w-screen mx-auto pb-40">
           <div className="mx-auto max-w-screen-xl border-t-2">
-            <h1 className={`mt-5 text-2xl text-white ${roboto.className}`}>
+            <h1
+              className={`mt-5 text-center text-xl text-white sm:text-xl md:text-left md:text-2xl ${roboto.className}`}
+            >
               Skills, tools and technologies
             </h1>
           </div>
@@ -98,39 +100,50 @@ export default function Home() {
         </section>
       </StickySection>
 
-      <footer className="flex items-center justify-between p-6">
-        <span className={`text-md text-white ${montserrat.className}`}>
+      <footer className="flex flex-col items-center justify-between gap-4 p-6 md:flex-row md:gap-0">
+        <span
+          className={`text-md text-center text-white ${montserrat.className}`}
+        >
           @2024 - Gustavo Matos
         </span>
 
-        <nav className="flex gap-4">
+        <nav className="flex flex-wrap justify-center gap-4">
           <a
             href="https://www.linkedin.com/in/gustavo-andrade-matos/"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <button
-              className={`text-md rounded-full px-10 py-2 font-medium text-white hover:bg-[var(--secondary-blue)] ${montserrat.className}`}
+              className={`text-md rounded-full px-6 py-2 font-medium text-white hover:bg-[var(--secondary-blue)] ${montserrat.className}`}
             >
               Linkedin
             </button>
           </a>
-          <a href="https://www.instagram.com/eugumatos/" target="blank">
+          <a
+            href="https://www.instagram.com/eugumatos/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
-              className={`text-md rounded-full px-10 py-2 font-medium text-white hover:bg-[var(--secondary-blue)] ${montserrat.className}`}
+              className={`text-md rounded-full px-6 py-2 font-medium text-white hover:bg-[var(--secondary-blue)] ${montserrat.className}`}
             >
               Instagram
             </button>
           </a>
-          <a href="https://github.com/eugumatos" target="blank">
+          <a
+            href="https://github.com/eugumatos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
-              className={`text-md rounded-full px-10 py-2 font-medium text-white hover:bg-[var(--secondary-blue)] ${montserrat.className}`}
+              className={`text-md rounded-full px-6 py-2 font-medium text-white hover:bg-[var(--secondary-blue)] ${montserrat.className}`}
             >
               GitHub
             </button>
           </a>
         </nav>
 
-        <div className="flex gap-2">
+        <div className="flex items-center justify-center gap-2 md:flex-row">
           <span className={`text-md text-white ${montserrat.className}`}>
             Deployed with Vercel
           </span>
